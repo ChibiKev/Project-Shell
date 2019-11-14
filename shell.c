@@ -9,6 +9,8 @@
 #include "HeaderFiles/exit.h"
 
 char current[1024]; // Global Current Directory, In Case It Gets Changed
+char commands[1024][50];
+int count = 0;
 
 void runShell();
 void currentDirectory();
@@ -23,6 +25,7 @@ void runShell(){
 		fgets(input,1024,stdin); // Obtain Input
 		int length = strlen(input); // Get Length of Input
 		input[length-1]='\0'; // Limit The Legnth so it Isn't 1024.
+		strcpy(commands[count++],input);
 		if(strcmp(input,"help") == 0){ // Help
 			help();
 		}
@@ -42,7 +45,7 @@ void runShell(){
 			printf("Invalid Input, You Inputted %s. Type 'help' For List of Commands. \n", input);
 		}
 	}
-	sh_exit(NULL); // Exit
+	sh_exit(commands,count); // Exit
 }
 
 

@@ -1,6 +1,6 @@
 #ifndef EXIT_H
 #define EXIT_H
 
-int sh_exit(char **args);
+void sh_exit(char commands[1024][50],int count);
 
 #endif
