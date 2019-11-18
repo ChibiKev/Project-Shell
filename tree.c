@@ -5,7 +5,7 @@
 #include <sys/wait.h>
 
 int sh_tree(char **args){
-	int fid
+	int fid;
     fid=fork();
     if(fid==0)								// Fork a child to make a new directory
     {
@@ -20,6 +20,7 @@ int sh_tree(char **args){
     else
     {
         int c1 = wait(NULL);				// wait for child to complete
+		chdir("dir0");						// change directroy internally
         FILE *t1 = fopen("t1.txt","wb"); 	// Create t1.txt
         fclose(t1);
         FILE *t2 = fopen("t2.txt","wb"); 	// Create t2.txt
