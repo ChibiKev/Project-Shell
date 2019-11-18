@@ -24,7 +24,7 @@ void runShell(){
 		char input[1024]; // String To Take Input
 		fgets(input,1024,stdin); // Obtain Input
 		int length = strlen(input); // Get Length of Input
-		input[length-1]='\0'; // Limit The Legnth so it Isn't 1024.
+		input[length-1]='\0'; // Limit The length so it Isn't 1024.
 		strcpy(commands[count++],input);
 		if(strcmp(input,"help") == 0){ // Help
 			help();
