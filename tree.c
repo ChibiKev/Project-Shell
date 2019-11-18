@@ -11,7 +11,7 @@ int sh_tree(char **args){
     if(fid==0)								// Fork a child to make a new directory
     {
         mkdir("dir0",0777);					// Make dir0 with all access
-        //wait(&status);
+        exit(0);
     }
     else if(fid<0)							// Prints error message if fork failed
     {
