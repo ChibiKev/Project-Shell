@@ -28,7 +28,10 @@ int sh_list(char **args) {
 
         printf("\n");
 
-        dup(file_desc);
+        dup2(file_desc, 1);
+
+
+
         // Setup the arguments/environment to call
         char *new_argv[] = {"ls", "-l", 0};
 
@@ -48,11 +51,24 @@ int sh_list(char **args) {
 
 
 
+        // open file and print to stdout
         FILE *file = fopen("t1.txt", "r");
         if (file == NULL) {
             printf("File t1.txt not found.\n");
             return 1;
         }
+        char c;
+
+        c = fgetc(file);
+        while (c != EOF)
+        {
+            printf ("%c", c);
+            c = fgetc(file);
+        }
+
+        fclose(file);
+
+        // renaming file
 
         rename("t1.txt", "tree.txt");
 
