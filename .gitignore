@@ -6,3 +6,4 @@ exit.o
 tree.o
 shell.o
 file.txt
+.idea

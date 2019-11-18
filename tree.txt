@@ -1,0 +1,22 @@
+<<<<<<< HEAD
+=======
+total 132
+drwxr-xr-x 3 kev kev  4096 Nov 18 13:01 dir0
+-rw-r--r-- 1 kev kev   734 Nov 14 17:35 exit.c
+-rw-r--r-- 1 kev kev  2600 Nov 18 12:37 exit.o
+-rw-r--r-- 1 kev kev    20 Nov 18 13:02 file.txt
+drwxr-xr-x 2 kev kev  4096 Oct 24 14:41 HeaderFiles
+-rw-r--r-- 1 kev kev  1285 Nov 18 12:58 list.c
+-rw-r--r-- 1 kev kev  3024 Nov 18 12:58 list.o
+-rw-r--r-- 1 kev kev   215 Nov 12 18:31 Makefile
+-rw-r--r-- 1 kev kev  1113 Nov 18 12:23 path.c
+-rw-r--r-- 1 kev kev  3536 Nov 18 12:37 path.o
+-rw-r--r-- 1 kev kev 48780 Oct 24 14:09 Project.pdf
+-rwxr-xr-x 1 kev kev 18112 Nov 18 13:01 shell
+-rw-r--r-- 1 kev kev  2713 Nov 18 12:56 shell.c
+-rw-r--r-- 1 kev kev  5184 Nov 18 12:57 shell.o
+-rw-r--r-- 1 kev kev     0 Nov 18 13:03 t1.txt
+-rw-r--r-- 1 kev kev   872 Nov 18 12:59 tree.c
+-rw-r--r-- 1 kev kev  2496 Nov 18 13:01 tree.o
+-rw-r--r-- 1 kev kev   871 Nov 18 13:03 tree.txt
+>>>>>>> 9e5e13baa1db499008c69b45632038ffeace8071
