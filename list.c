@@ -27,7 +27,6 @@ int sh_list(char **args) {
 
         printf("\n");
 
-        close(1);
         dup(file_desc);
         // Setup the arguments/environment to call
         char *new_argv[] = {"ls", "-l", 0};
