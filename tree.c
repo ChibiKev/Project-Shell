@@ -3,6 +3,7 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/wait.h>
+#include <sys/stat.h>
 
 int sh_tree(char **args){
 	int fid;
@@ -10,7 +11,6 @@ int sh_tree(char **args){
     if(fid==0)								// Fork a child to make a new directory
     {
         mkdir("dir0",0777);					// Make dir0 with all access
-		exit(0);
         //wait(&status);
     }
     else if(fid<0)							// Prints error message if fork failed
@@ -19,7 +19,7 @@ int sh_tree(char **args){
     }
     else
     {
-        int c1 = wait(NULL);				// wait for child to complete
+        wait(NULL);				// wait for child to complete
 		chdir("dir0");						// change directroy internally
         FILE *t1 = fopen("t1.txt","wb"); 	// Create t1.txt
         fclose(t1);
@@ -29,5 +29,5 @@ int sh_tree(char **args){
         fclose(t3);
         mkdir("dir1",0777);					// Make dir1 with all access
 	}
-	
+	return 0;
 }

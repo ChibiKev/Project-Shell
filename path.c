@@ -16,7 +16,7 @@ int sh_path(char **args){
 		printf("%c", c);
 		c = fgetc(file);
 	}
-	int val = rename("t2.txt", "path-info.txt");
+	rename("t2.txt", "path-info.txt");
 	printf("Renamed t2.txt to path-info.txt\n");
 
 	FILE* tree = fopen("tree.txt", "r");
@@ -41,11 +41,11 @@ int sh_path(char **args){
 		fputc(c, t3);
 		c = fgetc(path);
 	}
-	val = rename("t3.txt", "log.txt");
+	rename("t3.txt", "log.txt");
 	printf("Concatenated tree.txt and path-info.txt into t3.txt and renamed t3.txt to log.txt\n");
 
-	val = remove("tree.txt");
-	val = remove("path-info.txt");
+	remove("tree.txt");
+	remove("path-info.txt");
 	printf("Deleted tree.txt and path-info.txt files.\n");
 	return 1;
 }
