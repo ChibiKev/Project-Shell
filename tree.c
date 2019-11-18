@@ -5,34 +5,28 @@
 #include <sys/wait.h>
 
 int sh_tree(char **args){
-	int fid,status;
-    char string[50];
-    sprintf(string, "ps -A >> dir0/file.txt");
+	int fid
     fid=fork();
-    if(fid==0)
+    if(fid==0)								// Fork a child to make a new directory
     {
-        mkdir("dir0",0777);
+        mkdir("dir0",0777);					// Make dir0 with all access
 		exit(0);
         //wait(&status);
     }
-    else if(fid<0)
+    else if(fid<0)							// Prints error message if fork failed
     {
         printf("fork failed");
     }
     else
     {
-        int c1 = wait(NULL);
-        char s[100];
-        printf("%s\n", getcwd(s, 100));
-        chdir("dir0");
-        printf("%s\n", getcwd(s, 100));
-        FILE *t1 = fopen("t1.txt","wb"); // Open or Create file.txt
+        int c1 = wait(NULL);				// wait for child to complete
+        FILE *t1 = fopen("t1.txt","wb"); 	// Create t1.txt
         fclose(t1);
-        FILE *t2 = fopen("t2.txt","wb"); // Open or Create file.txt
+        FILE *t2 = fopen("t2.txt","wb"); 	// Create t2.txt
         fclose(t2);
-        FILE *t3 = fopen("t3.txt","wb"); // Open or Create file.txt
+        FILE *t3 = fopen("t3.txt","wb"); 	// Create t3.txt
         fclose(t3);
-        mkdir("dir1",0777);
+        mkdir("dir1",0777);					// Make dir1 with all access
 	}
 	
 }
