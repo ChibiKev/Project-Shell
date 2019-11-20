@@ -7,7 +7,6 @@
 #define READ_END 0
 #define WRITE_END 1
 
-
 int sh_list(char **args) {
 
     //clear Screen();
@@ -17,7 +16,6 @@ int sh_list(char **args) {
 
     int file_desc = open("t1.txt", O_WRONLY | O_CREAT, 0666);
 
-
     // Fork a process to run ls -l
     pid_ls = fork();
 
@@ -26,11 +24,7 @@ int sh_list(char **args) {
         return -1;
     } else if (pid_ls == 0) {
 
-        printf("\n");
-
         dup2(file_desc, 1);
-
-
 
         // Setup the arguments/environment to call
         char *new_argv[] = {"ls", "-l", 0};
@@ -44,12 +38,9 @@ int sh_list(char **args) {
         fprintf(stderr, "child ls -l failed!\n");
         return -1;
     } else {
-
         close(file_desc);
         // Wait for children to finish
         wait(NULL);
-
-
 
         // open file and print to stdout
         FILE *file = fopen("t1.txt", "r");
@@ -57,21 +48,15 @@ int sh_list(char **args) {
             printf("File t1.txt not found.\n");
             return 1;
         }
-        char c;
 
+        char c;
         c = fgetc(file);
-        while (c != EOF)
-        {
-            printf ("%c", c);
+        while (c != EOF) {
+            printf("%c", c);
             c = fgetc(file);
         }
-
         fclose(file);
-
-        // renaming file
-
-        rename("t1.txt", "tree.txt");
-
+        rename("t1.txt", "tree.txt"); // rename file
     }
 
     return 0;

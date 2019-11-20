@@ -1,8 +1,8 @@
 total 24
 drwxr-xr-x  2 tenzin113  staff   64 Nov 18 13:19 dir1
--rw-r--r--  1 tenzin113  staff   20 Nov 18 13:26 file.txt
+-rw-r--r--  1 tenzin113  staff   26 Nov 19 15:58 file.txt
 -rw-r--r--  1 tenzin113  staff  238 Nov 18 13:06 log.txt
--rw-r--r--  1 tenzin113  staff    0 Nov 18 13:56 t1.txt
--rw-r--r--  1 tenzin113  staff    0 Nov 18 13:56 t2.txt
--rw-r--r--  1 tenzin113  staff    0 Nov 18 13:56 t3.txt
--rw-r--r--  1 tenzin113  staff  404 Nov 18 13:26 tree.txt
+-rw-r--r--  1 tenzin113  staff    0 Nov 19 15:59 t1.txt
+-rw-r--r--  1 tenzin113  staff    0 Nov 19 15:59 t2.txt
+-rw-r--r--  1 tenzin113  staff    0 Nov 19 15:59 t3.txt
+-rw-r--r--  1 tenzin113  staff  404 Nov 19 15:58 tree.txt
