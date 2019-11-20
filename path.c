@@ -47,5 +47,5 @@ int sh_path(char **args){
 	remove("tree.txt");
 	remove("path-info.txt");
 	printf("Deleted tree.txt and path-info.txt files.\n");
-	return 1;
+	return 0;
 }

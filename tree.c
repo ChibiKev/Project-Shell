@@ -5,7 +5,7 @@
 #include <sys/wait.h>
 #include <sys/stat.h>
 
-int sh_tree(char **args){
+void sh_tree(char **args){
 	int fid;
     fid=fork();
     if(fid==0)								// Fork a child to make a new directory
@@ -29,5 +29,4 @@ int sh_tree(char **args){
         fclose(t3);
         mkdir("dir1",0777);					// Make dir1 with all access
 	}
-	return 0;
 }

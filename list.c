@@ -8,7 +8,7 @@
 #define WRITE_END 1
 
 
-int sh_list(char **args) {
+void sh_list(char **args) {
 
     //clear Screen();
     system("clear");
@@ -23,14 +23,12 @@ int sh_list(char **args) {
 
     if (pid_ls < 0) {
         fprintf(stderr, "parent: Could not fork process to run ls\n");
-        return -1;
+        exit(0);
     } else if (pid_ls == 0) {
 
         printf("\n");
 
         dup2(file_desc, 1);
-
-
 
         // Setup the arguments/environment to call
         char *new_argv[] = {"ls", "-l", 0};
@@ -42,20 +40,18 @@ int sh_list(char **args) {
         // Execution will never continue in this process unless execve returns
         // because of an error
         fprintf(stderr, "child ls -l failed!\n");
-        return -1;
+        exit(0);
     } else {
 
         close(file_desc);
         // Wait for children to finish
         wait(NULL);
 
-
-
         // open file and print to stdout
         FILE *file = fopen("t1.txt", "r");
         if (file == NULL) {
             printf("File t1.txt not found.\n");
-            return 1;
+            exit(0);
         }
         char c;
 
@@ -73,8 +69,6 @@ int sh_list(char **args) {
         rename("t1.txt", "tree.txt");
 
     }
-
-    return 0;
 }
 
 
