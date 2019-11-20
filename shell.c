@@ -37,7 +37,6 @@ void runShell(){
 			sh_list(NULL);
 		}
 		else if(strcmp(input,"path") == 0){ // Path
-			printf("Current Directory: %s\n", current);
 			sh_path(NULL);
 		}
 		else if(strcmp(input,"exit") == 0){ // Exit
