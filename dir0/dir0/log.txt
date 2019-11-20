@@ -1,6 +1,7 @@
 total 8
-drwxr-xr-x 2 kev kev 4096 Nov 20 01:00 dir1
--rw-r--r-- 1 kev kev    0 Nov 20 01:00 t1.txt
--rw-r--r-- 1 kev kev    0 Nov 20 01:00 t2.txt
--rw-r--r-- 1 kev kev    0 Nov 20 01:00 t3.txt
--rw-r--r-- 1 kev kev  190 Nov 20 01:00 tree.txt
+drwxr-xr-x 2 csc103 csc103 4096 Nov 20 12:25 dir1
+-rw-r--r-- 1 csc103 csc103  238 Nov 20 12:00 log.txt
+-rw-r--r-- 1 csc103 csc103    0 Nov 20 12:25 t1.txt
+-rw-r--r-- 1 csc103 csc103    0 Nov 20 12:25 t2.txt
+-rw-r--r-- 1 csc103 csc103    0 Nov 20 12:25 t3.txt
+/home/csc103/Project-Shell/dir0/dir0

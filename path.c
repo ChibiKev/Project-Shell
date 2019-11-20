@@ -1,21 +1,23 @@
+// Worked on by Andy Li
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
 
 int sh_path(char **args){
-	FILE* file = fopen("t2.txt", "r");
+	FILE* file = fopen("t2.txt", "w");
 	if(file == NULL)
 	{
 		printf("File t2.txt not found. Aborting command...\n");
 		return 1;
-	}
-	char c = fgetc(file);
-	printf("Reading contents of t2.txt\n");
-	while(c != EOF)
-	{
-		printf("%c", c);
-		c = fgetc(file);
-	}
+ 	}
+	char current[1024];
+	char c;
+	getcwd(current, sizeof(current));
+	printf("Current directory: user@user:~%s->\n", current);
+	printf("Writing current directory to t2.txt\n");
+	fputs(current, file);
+	fclose(file);
 	rename("t2.txt", "path-info.txt");
 	printf("Renamed t2.txt to path-info.txt\n");
 
@@ -27,13 +29,13 @@ int sh_path(char **args){
 	{
 		printf("Missing necessary files. Please make sure tree.txt and t3.txt are in the current directory. Aborting command...\n");
 		return 1;
-	}
+	} 
 	c = fgetc(tree);
 	while(c != EOF)
 	{
 		fputc(c, t3);
 		c = fgetc(tree);
-	}
+	} 
 
 	c = fgetc(path);
 	while(c != EOF)
