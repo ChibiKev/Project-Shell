@@ -31,12 +31,13 @@ void runShell(){
 		}
 		else if(strcmp(input,"tree") == 0){ // Tree
 			sh_tree(NULL);
+			getcwd(current, sizeof(current)); // Get Our Current Folder Location
 		}
 		else if(strcmp(input,"list") == 0){ // List
 			sh_list(NULL);
 		}
 		else if(strcmp(input,"path") == 0){ // Path
-			currentDirectory();
+			printf("Current Directory: %s\n", current);
 			sh_path(NULL);
 		}
 		else if(strcmp(input,"exit") == 0){ // Exit

@@ -1,6 +1,0 @@
-total 8
-drwxr-xr-x 2 kev kev 4096 Nov 18 12:39 dir1
--rw-r--r-- 1 kev kev   23 Nov 18 12:59 file.txt
--rw-r--r-- 1 kev kev    0 Nov 18 13:01 t1.txt
--rw-r--r-- 1 kev kev    0 Nov 18 13:01 t2.txt
--rw-r--r-- 1 kev kev    0 Nov 18 13:01 t3.txt

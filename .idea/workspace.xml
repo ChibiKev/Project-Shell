@@ -10,10 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bce62da-3ae3-4266-9a66-7d8a5de71891" name="Default Changelist" comment="list is completed. Let me know if something is wrong but it should be fine.">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HeaderFiles/list.h" beforeDir="false" afterPath="$PROJECT_DIR$/HeaderFiles/list.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HeaderFiles/tree.h" beforeDir="false" afterPath="$PROJECT_DIR$/HeaderFiles/tree.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dir0/log.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dir0/tree.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dir0/tree.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exit.c" beforeDir="false" afterPath="$PROJECT_DIR$/exit.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/list.c" beforeDir="false" afterPath="$PROJECT_DIR$/list.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/path.c" beforeDir="false" afterPath="$PROJECT_DIR$/path.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shell.c" beforeDir="false" afterPath="$PROJECT_DIR$/shell.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tree.c" beforeDir="false" afterPath="$PROJECT_DIR$/tree.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,12 +32,12 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/list.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="64" selection-start-line="64" selection-end-line="64" />
+            <state relative-caret-position="392">
+              <caret line="63" selection-start-line="63" selection-end-line="63" />
             </state>
           </provider>
         </entry>
@@ -62,6 +69,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -73,7 +81,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -117,7 +124,8 @@
       <workItem from="1574098917855" duration="1155000" />
       <workItem from="1574101071852" duration="2477000" />
       <workItem from="1574197022385" duration="215000" />
-      <workItem from="1574287754024" duration="483000" />
+      <workItem from="1574287754024" duration="761000" />
+      <workItem from="1574299368908" duration="488000" />
     </task>
     <task id="LOCAL-00001" summary="list is completed. Let me know if something is wrong but it should be fine.">
       <created>1574041385751</created>
@@ -130,13 +138,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11928000" />
+    <option name="totallyTimeSpent" value="12694000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13090129" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13233191" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -248,8 +255,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/list.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        <state relative-caret-position="392">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
         </state>
       </provider>
     </entry>

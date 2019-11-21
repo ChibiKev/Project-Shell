@@ -7,3 +7,5 @@ tree.o
 shell.o
 file.txt
 .idea
+workspace.xml
+tree.txt
