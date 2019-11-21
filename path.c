@@ -1,4 +1,4 @@
-//Worked on by Andy Li
+// Worked on by Andy Li
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -6,8 +6,7 @@
 
  int sh_path(char **args){
 	FILE* file = fopen("t2.txt", "w"); // open t2.txt in write mode to write path to
-	if(file == NULL) // t2.txt doesn't exist
- 	{
+	if(file == NULL){ // t2.txt doesn't exist
 		printf("File t2.txt not found. Aborting command...\n");
 		return 1;
 	}
@@ -24,21 +23,18 @@
 	FILE* path = fopen("path-info.txt", "r"); // open path-info.txt to read contents and store into t3
 	FILE* t3 = fopen("t3.txt", "a"); // open t3.txt to append to from tree.txt and path-info.txt
 
-	if(tree == NULL || t3 == NULL) // tree.txt or t3.txt doesn't exist
-	{
+	if(tree == NULL || t3 == NULL){ // tree.txt or t3.txt doesn't exist
 		printf("Missing necessary files. Please make sure tree.txt and t3.txt are in the current directory. Aborting command...\n");
 		return 1;
 	}
 	c = fgetc(tree);
-	while(c != EOF) // write tree.txt contents into t3.txt
-	{
+	while(c != EOF){ // write tree.txt contents into t3.txt
 		fputc(c, t3);
 		c = fgetc(tree);
 	}
 
 	c = fgetc(path);
-	while(c != EOF) // write path-info.txt contents into t3.txt
-	{
+	while(c != EOF){ // write path-info.txt contents into t3.txt
 		fputc(c, t3);
 		c = fgetc(path);
 	}

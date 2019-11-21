@@ -1,3 +1,5 @@
+// Worked on by Kevin Chen
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
