@@ -7,8 +7,6 @@
 #define READ_END 0
 #define WRITE_END 1
 
-int sh_list(char **args) {
-=======
 
 void sh_list(char **args) {
 
