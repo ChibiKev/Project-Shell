@@ -8,9 +8,12 @@
 
 void sh_exit(char commands[1024][50], int count){ // Take in 2D Array and Counts
 	printf("Last 4 Commands:\n"); // Print
-	int start = count - 4; // Gets the Last Four Commands
+	int start = count;
 	if (start < 4){ // If Less Than 4, Then Start at 0
 		start = 0; // Start at 0
+	}
+	else{ // Otherwise
+		start -= 4; // Gets the Last Four Commands
 	}
 	for(int i = start; i < count; i++){ // Prints the Last Four
 		printf("%d: %s\n", i + 1, commands[i]); // Prints

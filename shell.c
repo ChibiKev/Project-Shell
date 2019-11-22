@@ -5,10 +5,10 @@
 #include <unistd.h>
 #include <string.h>
 #include <sys/wait.h>
-#include "HeaderFiles/tree.h"
-#include "HeaderFiles/list.h"
-#include "HeaderFiles/path.h"
-#include "HeaderFiles/exit.h"
+#include "Header/tree.h"
+#include "Header/list.h"
+#include "Header/path.h"
+#include "Header/exit.h"
 
 char current[1024]; // Global Current Directory, In Case It Gets Changed
 char commands[1024][50];
